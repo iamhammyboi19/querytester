@@ -120,7 +120,7 @@ body {
   transition: 0.3s all ease-in;
 }
 
-.signInBtn,
+.sumbitactionBtn,
 .signUpBtn {
   font-size: 1.5rem;
   padding: 1.5rem 4rem;
@@ -136,12 +136,17 @@ body {
   gap: 1rem;
 }
 
-.signInBtn:hover,
+.sumbitactionBtn_text {
+  align-self: center;
+  margin-left: auto;
+}
+
+.sumbitactionBtn:hover,
 .signUpBtn:hover {
   cursor: pointer;
 }
 
-.login-form--,
+.authsform,
 .reset-form--,
 .setNewPass-form-- {
   max-width: 70rem;
@@ -151,7 +156,7 @@ body {
   box-shadow: 1rem 2.4rem 4.8rem 1rem rgba(0, 0, 0, 0.15);
 }
 
-.login-form--,
+.authsform,
 .setNewPass-form-- {
   padding: 8rem 7rem 8rem 7rem;
 }
@@ -170,11 +175,11 @@ body {
 
 /* alerts */
 .alert {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   /* max-width: 35rem; */
   text-align: center;
   color: #ffffff;
-  padding: 1.5rem 1.8rem 1.5rem 1.8rem;
+  padding: 1.1rem 2rem 1.1rem 2rem;
   border-radius: 10px;
   font-weight: 300;
   visibility: hidden;
@@ -183,7 +188,7 @@ body {
   /* display: inline-block; */
   letter-spacing: 0.4px;
   position: absolute;
-  bottom: -200px;
+  bottom: -20rem;
   /* margin-top: 2rem; */
   left: 50%;
   transform: translateX(-50%);
@@ -199,7 +204,7 @@ body {
 }
 
 .showAlert {
-  bottom: -100px;
+  bottom: -0.5rem;
   visibility: visible;
   pointer-events: visible;
   opacity: 1;
@@ -254,7 +259,7 @@ body {
   text-decoration: none;
 }
 
-.resetsum {
+.authsSummary {
   font-size: 1.4rem;
   font-weight: 300;
   margin-bottom: 3rem;
@@ -262,3 +267,114 @@ body {
   line-height: 1.4;
   color: #495057;
 }
+
+.hidden {
+  display: none;
+}
+
+/* SPINNER PART */
+
+.lds-ring {
+  display: inline-block;
+  position: relative;
+  width: 30px;
+  height: 30px;
+  margin-left: auto;
+}
+
+.reduce-spin-width {
+  width: 10px;
+  height: 10px;
+}
+
+.lds-ring div {
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  margin: 4px;
+  border: 4px solid #495057;
+  border-radius: 50%;
+  animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  border-color: #495057 transparent transparent transparent;
+}
+
+.reduce-spin-width div {
+  width: 16px;
+  height: 16px;
+  margin: 1px;
+  border: 1px solid #ffffff;
+  border-radius: 50%;
+  animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  border-color: #ffffff transparent transparent transparent;
+}
+
+.lds-ring div:nth-child(1) {
+  animation-delay: -0.45s;
+}
+.lds-ring div:nth-child(2) {
+  animation-delay: -0.3s;
+}
+.lds-ring div:nth-child(3) {
+  animation-delay: -0.15s;
+}
+@keyframes lds-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.spinner {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+}
+
+.hidden {
+  display: none;
+}
+
+/* responsive for auths */
+
+@media (max-width: 31.65em) {
+  html {
+    font-size: 56.25%;
+  }
+
+  .login-section {
+    max-width: 50rem;
+    margin: 4rem auto;
+    padding: 0.3rem 2rem;
+  }
+
+  .authsform,
+  .reset-form--,
+  .setNewPass-form-- {
+    max-width: 50rem;
+  }
+
+  .authsform,
+  .setNewPass-form-- {
+    padding: 6rem 5.5rem 6rem 5.5rem;
+  }
+}
+
+@media (max-width: 23.125em) {
+  html {
+    font-size: 50%;
+  }
+
+  .login-section {
+    max-width: 37rem;
+    margin: 2rem auto;
+    padding: 0.1rem 0.1rem;
+  }
+}
+
