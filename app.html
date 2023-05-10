@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resume Builder</title>
+    <link rel="stylesheet" href="src/css/intro.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;700&family=Poppins:wght@100;200;400;500;600;700&family=Ubuntu:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/x-icon" href="src/img/resume-icon.jpeg" />
+  </head>
+  <body>
+    <header>
+      <nav class="header-nav">
+        <ul class="nav-ul">
+          <li class="nav-ul-li first-nav-li">
+            <ion-icon name="logo-css3" class="my-resume-logo"></ion-icon
+            ><span>my_resume</span>
+          </li>
+
+          <li>
+            <figure>
+              <a href="#"
+                ><img
+                  src="src/img/userprofilee.jpeg"
+                  alt=""
+                  class="userprofile"
+              /></a>
+            </figure>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="resumecoverletter">
+      <h3 class="resumecoverletter_header">Resumes & Cover Letters</h3>
+
+      <ul>
+        <li><a href="#">Resumes</a></li>
+      </ul>
+
+      <div class="resumecoverletter_cover-sample">
+        <figure class="resumecoverletter_cover-sample-imglink">
+          <a href="#">
+            <img src="src/img/sales-resume-examples.jpeg" alt=""
+          /></a>
+        </figure>
+
+        <div class="resumecoverletter_cover-sample--edit">
+          <form class="resumecoverletter_cover-sample--form">
+            <div class="udhjdg">
+              <input
+                type="text"
+                value="untitled"
+                class="edit-input"
+                placeholder="Untitled"
+              />
+              <ion-icon name="create-outline" class="edit-pen"></ion-icon>
+              <p class="resumecoverletter_cover-sample--form-uptime">
+                Updated 27, April 2023, 19:30
+              </p>
+            </div>
+
+            <div class="resumecoverletter_cover-sample--form-edit-con">
+              <a href="#" class="resumecoverletter_cover-sample--form-edit">
+                <ion-icon name="create-outline" class="edit-pen2"></ion-icon>
+                <span class="editspan">Edit</span>
+              </a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- <script>
+      const input = document.querySelector(".edit-input"); // get the input element
+      input.addEventListener("input", resizeInput); // bind the "resizeInput" callback on "input" event
+      resizeInput.call(input); // immediately call the function
+
+      function resizeInput() {
+        if (this.value.length === 0) {
+          this.setAttribute("placeholder", "Untitled");
+        }
+
+        this.style.width = this.value.length + "ch";
+      }
+    </script> -->
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

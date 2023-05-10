@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resume Sign up</title>
+    <link rel="icon" type="image/x-icon" href="public/src/img/logoweb.jpg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;700&family=Poppins:wght@100;200;400;500;600;700&family=Ubuntu:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="auths.css" />
+  </head>
+  <body>
+    <p class="alert alert--success">Logged In Successfully</p>
+    <section class="login-section">
+      <form class="login-form--">
+        <p class="msg">
+          <ion-icon name="close" class="close-icon"></ion-icon>
+          <span class="msg_span--signup">
+            Too many failed attempts. Please try again in 20 mins</span
+          >
+        </p>
+        <h6 class="signinacct">Create your account</h6>
+        <div class="email-con">
+          <label for="email-address" class="email-label">Username</label>
+          <input type="text" class="username-input" />
+        </div>
+        <div class="email-con">
+          <label for="email-address" class="email-label">Email</label>
+          <input type="text" class="email-input" />
+        </div>
+        <div class="email-con">
+          <label for="email-address" class="email-label">Full Name</label>
+          <input type="text" class="fullname-input" />
+        </div>
+        <div class="email-con">
+          <div class="pass-forgot">
+            <label for="password" class="password-label">Password</label>
+            <!-- <a href="#" class="forgotpass">Forgot password?</a> -->
+          </div>
+
+          <input type="password" class="password-input" />
+        </div>
+        <div class="email-con">
+          <div class="pass-forgot">
+            <label for="password" class="password-label"
+              >Confirm Password</label
+            >
+            <!-- <a href="#" class="forgotpass">Forgot password?</a> -->
+          </div>
+
+          <input type="password" class="confirmpassword-input" />
+        </div>
+
+        <button class="signUpBtn">
+          Create account
+          <div class="lds-ring reduce-spin-width hidden">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+        </button>
+
+        <p class="new2resP">
+          <span class="new2res">Already have an account?</span>
+          <a href="/forgotpassword" class="forgotpass under">Sign in</a>
+        </p>
+      </form>
+    </section>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.1.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule=""
+      src="https://unpkg.com/ionicons@5.1.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
