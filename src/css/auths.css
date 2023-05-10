@@ -1,0 +1,379 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/* width="1856" height="2624" */
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+  font-family: "Poppins", sans-serif;
+  font-family: "Ubuntu", sans-serif;
+  position: relative;
+}
+
+/* login section */
+.login-section {
+  max-width: 65rem;
+  margin: 7rem auto;
+  padding: 1rem 5rem;
+}
+
+.loginheader {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #343a40;
+  margin-bottom: 5rem;
+  padding-left: 3rem;
+  letter-spacing: 0.5px;
+}
+
+.email-con {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 4rem;
+}
+
+.email-reset-con {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+}
+
+.signinacct {
+  font-size: 2.2rem;
+  color: #495057;
+  font-weight: 500;
+  margin-bottom: 3rem;
+}
+
+.email-label,
+.password-label {
+  font-size: 1.3rem;
+  margin-bottom: 1.2rem;
+  font-weight: 400;
+  /* color: #495057; */
+  color: #212529;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+.email-input,
+.password-input,
+.fullname-input,
+.username-input,
+.confirmpassword-input {
+  font-size: 1.5rem;
+  font-weight: 500;
+  padding: 0.3rem 1.5rem 0.3rem 1.5rem;
+  border: 0.5px solid #adb5bd;
+  border-radius: 5px;
+  height: 4rem;
+  letter-spacing: 0.5px;
+  font-weight: 500;
+  color: #495057;
+}
+
+.email-input:focus,
+.password-input:focus,
+.fullname-input:focus,
+.username-input:focus,
+.confirmpassword-input:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.3rem #d0ebff;
+  transition: 0.2s all ease-in-out;
+}
+
+.pass-forgot {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 0.3rem 0 0.3rem;
+  margin-bottom: 0.5rem;
+}
+
+.forgotpass {
+  font-size: 1.3rem;
+  text-decoration: none;
+  font-weight: 300;
+  color: #228be6;
+  letter-spacing: 0.5px;
+}
+
+.returnToLogin {
+  font-size: 1.4rem;
+  text-decoration: none;
+  color: #4c6ef5;
+  letter-spacing: 0.5px;
+  display: block;
+  margin: 2rem auto;
+  text-align: center;
+  font-weight: 400;
+}
+
+.forgotpass:hover,
+.returnToLogin:hover {
+  color: #4c6ef5;
+  transition: 0.3s all ease-in;
+}
+
+.sumbitactionBtn,
+.signUpBtn {
+  font-size: 1.5rem;
+  padding: 1.5rem 4rem;
+  background-color: #4c6ef5;
+  border: none;
+  color: #fff;
+  border-radius: 0.5rem;
+  width: 100%;
+  letter-spacing: 0.5px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  gap: 1rem;
+}
+
+.sumbitactionBtn_text {
+  align-self: center;
+  margin-left: auto;
+}
+
+.sumbitactionBtn:hover,
+.signUpBtn:hover {
+  cursor: pointer;
+}
+
+.authsform,
+.reset-form--,
+.setNewPass-form-- {
+  max-width: 70rem;
+  margin: 0 auto;
+  /* padding: 6.5rem 7rem 3rem 7rem; */
+  background-color: #fff;
+  box-shadow: 1rem 2.4rem 4.8rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+.authsform,
+.setNewPass-form-- {
+  padding: 8rem 7rem 8rem 7rem;
+}
+
+.reset-form-- {
+  padding: 6.5rem 7rem 3rem 7rem;
+}
+
+.reset-pass-summary {
+  font-size: 1.4rem;
+  line-height: 1.4;
+  font-weight: 300;
+  color: #868e96;
+  margin-bottom: 3rem;
+}
+
+/* alerts */
+.alert {
+  font-size: 1.2rem;
+  /* max-width: 35rem; */
+  text-align: center;
+  color: #ffffff;
+  padding: 1.1rem 2rem 1.1rem 2rem;
+  border-radius: 10px;
+  font-weight: 300;
+  visibility: hidden;
+  pointer-events: none;
+  opacity: 0;
+  /* display: inline-block; */
+  letter-spacing: 0.4px;
+  position: absolute;
+  bottom: -20rem;
+  /* margin-top: 2rem; */
+  left: 50%;
+  transform: translateX(-50%);
+  transition: all 1s ease-in-out;
+}
+
+.alert--success {
+  background-color: #37b24d;
+}
+
+.alert--error {
+  background-color: #f03e3e;
+}
+
+.showAlert {
+  bottom: -0.5rem;
+  visibility: visible;
+  pointer-events: visible;
+  opacity: 1;
+  transition: all 1s ease-in-out;
+}
+
+.msg {
+  font-size: 1.3rem;
+  display: inline-block;
+  color: #c92a2a;
+  margin-bottom: 3rem;
+  padding: 3rem 5rem;
+  letter-spacing: 1px;
+  background-color: #ffe3e3;
+  text-align: center;
+  line-height: 1.2;
+  border: 1px solid #e03131;
+  border-radius: 0.5rem;
+  font-weight: 500;
+  position: relative;
+}
+
+.close-icon {
+  position: absolute;
+  right: 4%;
+  top: 15%;
+  font-size: 1.7rem;
+}
+
+.close-icon:hover {
+  cursor: pointer;
+}
+
+.new2res {
+  font-size: 1.4rem;
+  font-weight: 300;
+  display: inline-block;
+  margin-right: 0.5rem;
+}
+
+.new2resP {
+  margin-top: 3rem;
+  text-align: center;
+}
+
+.under {
+  text-decoration: underline;
+  font-size: 1.45rem;
+}
+
+.under:hover {
+  text-decoration: none;
+}
+
+.authsSummary {
+  font-size: 1.4rem;
+  font-weight: 300;
+  margin-bottom: 3rem;
+  letter-spacing: 1.4;
+  line-height: 1.4;
+  color: #495057;
+}
+
+.hidden {
+  display: none;
+}
+
+/* SPINNER PART */
+
+.lds-ring {
+  display: inline-block;
+  position: relative;
+  width: 30px;
+  height: 30px;
+  margin-left: auto;
+}
+
+.reduce-spin-width {
+  width: 10px;
+  height: 10px;
+}
+
+.lds-ring div {
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  margin: 4px;
+  border: 4px solid #495057;
+  border-radius: 50%;
+  animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  border-color: #495057 transparent transparent transparent;
+}
+
+.reduce-spin-width div {
+  width: 16px;
+  height: 16px;
+  margin: 1px;
+  border: 1px solid #ffffff;
+  border-radius: 50%;
+  animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  border-color: #ffffff transparent transparent transparent;
+}
+
+.lds-ring div:nth-child(1) {
+  animation-delay: -0.45s;
+}
+.lds-ring div:nth-child(2) {
+  animation-delay: -0.3s;
+}
+.lds-ring div:nth-child(3) {
+  animation-delay: -0.15s;
+}
+@keyframes lds-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.spinner {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+}
+
+.hidden {
+  display: none;
+}
+
+/* responsive for auths */
+
+@media (max-width: 31.65em) {
+  html {
+    font-size: 56.25%;
+  }
+
+  .login-section {
+    max-width: 50rem;
+    margin: 4rem auto;
+    padding: 0.3rem 2rem;
+  }
+
+  .authsform,
+  .reset-form--,
+  .setNewPass-form-- {
+    max-width: 50rem;
+  }
+
+  .authsform,
+  .setNewPass-form-- {
+    padding: 6rem 5.5rem 6rem 5.5rem;
+  }
+}
+
+@media (max-width: 23.125em) {
+  html {
+    font-size: 50%;
+  }
+
+  .login-section {
+    max-width: 37rem;
+    margin: 2rem auto;
+    padding: 0.1rem 0.1rem;
+  }
+}
