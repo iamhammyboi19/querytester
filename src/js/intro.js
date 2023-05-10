@@ -1,11 +1,5 @@
 "use strict";
 
-import {
-  updateUserData,
-  updateUserPassword,
-  logoutUser,
-} from "../auths/allaxios";
-
 const header = document.querySelector(".container");
 const hiddenSection = document.querySelector(".first-sec");
 const imgOptionsCon = document.querySelector(".options-con");
