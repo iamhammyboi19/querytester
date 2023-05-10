@@ -999,6 +999,9 @@ footer p {
   .resumecoverletteraccount {
     padding: 2rem;
   }
+  .generelsection {
+    height: 170vh;
+  }
 }
 
 @media (max-width: 17.5em) {
