@@ -944,6 +944,10 @@ footer p {
   .resumecoverletter_cover-sample--form-uptime {
     font-size: 0.9rem;
   }
+  
+  footer ul {
+  gap: 3rem;
+}
 }
 
 @media (max-width: 48.125em) {
